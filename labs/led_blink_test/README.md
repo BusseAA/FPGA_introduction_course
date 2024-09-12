@@ -46,6 +46,7 @@
 * Откройте окно Program Device
 * Если программатор не был выбран автоматически, выберите его
 * Прошейте устройство
+* Вы должны увидеть как 2 диода поочередно мигают  
 ![image](https://github.com/user-attachments/assets/7a9fc0ce-80a5-4c25-a408-0add8e10fd51)
 ![image](https://github.com/user-attachments/assets/0edfd76c-50b0-4e0b-ac60-8d9e9cd60f0e)
 ![image](https://github.com/user-attachments/assets/2d8497dd-3e92-43ca-bc6c-3d80f254a73b)
