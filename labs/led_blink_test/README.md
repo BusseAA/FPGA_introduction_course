@@ -23,7 +23,7 @@
 Необходимо ассоциировать модуля верхнего уровня (Top level entity) с пинами чипа.  
 Для этого необходимо знать разводку платы. Для этого нужна документация на плату.  
 Для чипа EP4CE6E22C8 - [schematic](https://github.com/BusseAA/FPGA_introduction_course/blob/main/docs/schematic_v200.pdf).  
-Для чипа EP4CE6F17I7 - [User manual]().  
+Для чипа EP4CE6F17I7 - [User manual](https://github.com/BusseAA/FPGA_introduction_course/blob/main/docs/AX301_English_ug_V1.0.pdf).  
 * Откройте окно Pin Planer (Assignments->Pin Planer).
 * Добавьте ассоциации для входов/выходов модуля led_blink (Найдите в документации почему были выбраны именно эти пины).
   * clk
