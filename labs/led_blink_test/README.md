@@ -28,13 +28,13 @@
 * Добавьте ассоциации для входов/выходов модуля led_blink (Найдите в документации почему были выбраны именно эти пины).
   * clk
     * Node Name: clk
-    * Location: EP4CE6E22C8 - ? / EP4CE6F17I7 - PIN_E1
+    * Location: EP4CE6E22C8 - PIN_24 / EP4CE6F17I7 - PIN_E1
   * led1
     * Node Name: led1
-    * Location: PIN_E10
+    * Location: EP4CE6E22C8 - PIN_2 / EP4CE6F17I7 - PIN_E10
   * led2
     * Node Name: led2
-    * Location: PIN_F9
+    * Location: EP4CE6E22C8 - PIN_3 / EP4CE6F17I7 - PIN_F9
 
 ## Compile Design and Program device
 Скомпилируйте проект
