@@ -1,7 +1,7 @@
 module hex_to_seg(
-    input [3:0]data,
+    input [3:0] data,
 
-    output reg [6:0]segments
+    output reg [6:0] segments
 );
 
 always @(*) begin

@@ -1,5 +1,5 @@
 module top #(
-	parameter MAX_VAL = 16'h002b
+	parameter MAX_VAL = 16'hffff // you can set it as you wish
 )(
     input CLK,
 
@@ -12,7 +12,7 @@ wire [3:0] anodes;
 assign {DS_EN1, DS_EN2, DS_EN3, DS_EN4} = ~anodes;
 
 wire [6:0] segments;
-assign {DS_A, DS_B, DS_C, DS_D, DS_E, DS_F, DS_G} = segments;
+assign {DS_A, DS_B, DS_C, DS_D, DS_E, DS_F, DS_G} = segments; // for some boards you should invert segments (~segments)
 
 /*
 *  Make an instance of clock divider that will drive dynamic indication

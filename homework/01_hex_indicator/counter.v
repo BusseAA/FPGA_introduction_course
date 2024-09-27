@@ -1,12 +1,12 @@
 module counter #(
+	parameter BW_VAL = 16,
 	parameter MAX_VAL = 2
 )(
 	input clk,
-	output val
+	output [BW_VAL-1: 0] val
 );
 
-localparam BW_CNT = $clog2(MAX_VAL+1);
-reg [BW_CNT-1: 0] cnt;
+reg [BW_VAL-1: 0] cnt;
 
 /*
 *	counter code and input/output connection
