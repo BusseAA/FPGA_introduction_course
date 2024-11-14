@@ -39,7 +39,7 @@ module uart_rx #(
             // using counter to wait
             // and when we counted up to P_CLK_PER_BIT/2 go to the next state
             begin
-                if (r_cnt==P_CLK_PER_BIT/2) begin
+                if (r_cnt==(P_CLK_PER_BIT/2)-2) begin // -2 because zero indexation and 1 clock is already going
                     // we have waited for P_CLK_PER_BIT
                     // go to the next state (PS_DATA_BIT)
                     // reset counter and bit_idx to 0
