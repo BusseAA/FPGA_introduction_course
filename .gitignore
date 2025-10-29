@@ -1,0 +1,12 @@
+*.vcd
+*.mti
+*.mpf
+*.qpf
+*.qsf
+*.qws
+*.bak
+*.wlf
+db/
+incremental_db/
+output_files/
+work/

@@ -1,17 +1,31 @@
 module led_blink(
-	input wire clk,
-	output wire led1,
-	output wire led2
+	input clk,
+	output led1,
+	output led2
 );
-
-	reg [23:0] cnt = 24'h0;
-
-	always @(posedge clk) 
-	begin
-		cnt = cnt + 24'b1;
+    parameter PERIOD = 50*1000*1000;
+    parameter BW_CNT = $clog2(PERIOD);
+	reg [BW_CNT:0] cnt = {BW_CNT{1'b0}};
+	always @(posedge clk) begin
+        if (cnt==PERIOD-1) begin
+            cnt <= {BW_CNT{1'b0}};
+        end else begin
+		    cnt <= cnt + 1;
+        end
 	end
 
-	assign led1 = cnt[23];
-	assign led2 = ~cnt[23];
+    wire clk_en;
+    assign clk_en = cnt==PERIOD-1;
+
+    reg led1_state = 1'b0;
+    reg led2_state = 1'b1;
+    always @(posedge clk) begin
+        if (clk_en) begin
+            led1_state <= ~led1_state;
+            led2_state <= ~led2_state;
+        end
+    end
+    assign led1 = led1_state;
+    assign led2 = led2_state;
 
 endmodule
