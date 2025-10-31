@@ -39,8 +39,8 @@
 ### Pin assignment
 Необходимо ассоциировать порты (входы/выходы) модуля верхнего уровня (Top level entity) с физическими пинами чипа.  
 Для этого необходимо знать разводку платы. Для этого нужна документация на плату.  
-Для чипа EP4CE6E22C8 - [schematic](https://github.com/BusseAA/FPGA_introduction_course/blob/main/docs/schematic_v200.pdf).  
-Для чипа EP4CE6F17I7 - [User manual](https://github.com/BusseAA/FPGA_introduction_course/blob/main/docs/AX301_English_ug_V1.0.pdf).  
+Для чипа EP4CE6E22C8 - [schematic](../../docs/schematic_v200.pdf) и [документ на борду](../../docs/3-EASY%20FPGA%20Development%20Board%20Users%20Manual.pdf).  
+Для чипа EP4CE6F17I7 - [User manual](../../docs/AX301_English_ug_V1.0.pdf).  
 * Откройте окно Pin Planer (Assignments->Pin Planer). Там на нижней панели вы должны увидеть список портов топ модуля (список будет пуст если вы не запускали синтез и его можно заполнить впустую, но проще запустить синтез после которого они появятся).![sim_result](readme_data/pin_planner_ports.png)
 * Добавьте ассоциации для входов/выходов модуля led_blink (Найдите в документации почему были выбраны именно эти пины).
   * clk
